@@ -5,13 +5,7 @@
 }
 
 /* primary description */
-.primary-description {
-    color: #FFF;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: -20px;
-}
+
 
 /* navigation bar style start */
 #navigation {
@@ -77,6 +71,14 @@ a {
     padding-top: 106px;
 }
 
+.banner-section-description {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: -20px;
+}
+
 .banner-section-from {
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
@@ -84,7 +86,7 @@ a {
     height: 84px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4 , 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
     margin-top: 30px;
@@ -119,11 +121,41 @@ a {
 
 /* Banner-section-end */
 
+/* our popular tour section start */
+.Our-Popular-Tours {
+    width: 1170px;
+    height: 550px;
+    margin: 0 auto;
+    display: flex;
+    gap: 53px;
+    margin-top: 100px;
+}
+
+#our-popular-tours-heading {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: -10px;
+}
+.our-popular-tours-description {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    line-height: 26px;
+}
+ul>li{
+    margin-bottom: 20px;
+    line-height: 26px;
+}
+
+/* our popular tour section end */
+
 /* responsive section */
 @media screen and (max-width:576px) {
-
-    
-
+    #navigation{
+        flex-direction: column;
+    }
     #navigation-img {
         width: 28.724px;
         height: 33.516px;
@@ -132,7 +164,8 @@ a {
     #navigation-name {
         font-size: 21.543px;
     }
-/* banner section */
+
+    /* media query banner section start */
     .banner-section-heading {
         color: #FFF;
         font-size: 22px;
@@ -154,13 +187,29 @@ a {
     .banner-section-from {
         width: 287px;
         height: 288px;
-        grid-template-columns: repeat(1 , 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
-    #banner-section-btn{
+
+    #banner-section-btn {
         width: 255px;
         margin-left: 16px;
     }
-    .banner-section-from-input{
+
+    .banner-section-from-input {
         width: 255px;
+    }
+    /*media query our popular tour section start */
+    .Our-Popular-Tours{
+        width: 335px;
+        flex-direction: column;
+    }
+    #our-popular-tours-heading{
+        font-size: 20px;
+    }
+    .our-popular-tours-description{
+        font-size: 14px;
+    }
+    .our-popular-tours-img{
+        height: 342px;
     }
 }
