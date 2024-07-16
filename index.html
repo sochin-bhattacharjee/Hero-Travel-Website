@@ -4,22 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hero-Travel</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="Mulish-font">
     <header>
-        <nav>
-            <div>
-                <img src="./Images/Group 40071 (2).png" alt="">
-                <h3>Hero Travel</h3>
+        <!-- navigation section start -->
+        <nav id="navigation">
+            <div class="navigation-side-left">
+                <img id="navigation-img" src="./Images/Group 40071 (2).png" alt="">
+                <h3 id="navigation-name">Hero <span style="color: #FF5400;">Travel</span></h3>
             </div>
-            <div>
-                <h5>Home</h5>
-                <h5>Packages</h5>
-                <h5>Testimonial</h5>
-                <h5>Blog</h5>
-                <h5>Contact</h5>
-            </div>
+            <ul id="navigation-side-right">
+                <li class="navigation-text"><a style="color: #FF5400; font-weight: 700;" href="">Home</a></li>
+                <li class="navigation-text"><a href="">Packages</a></li>
+                <li class="navigation-text"><a href="">Testimonial</a></li>
+                <li class="navigation-text"><a href="">Blog</a></li>
+                <li class="navigation-text"><a href="">Contact</a></li>
+            </ul>
         </nav>
+        <!--navigation section end -->
+
+        <!-- Banner section start -->
+        <section class="banner-section">
+            <div>
+                <h1 class="banner-section-heading">Explore Your Travel</h1>
+                <p class="primary-description">Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio <br> enim ac quis sapien urna eu phasellus.</p>
+            </div>
+            <div class="banner-section-from">
+                    <input class="banner-section-from-input" placeholder="Where go" type="text">
+                    <select class="banner-section-from-input" name="" id="">
+                        <option value="">When</option>
+                    </select>
+                    <select class="banner-section-from-input" name="" id="">
+                        <option value="">Select Type</option>
+                    </select>
+                    <button class="banner-section-from-input" id="banner-section-btn"><a id="banner-section-btn-text" href="">Find Now</a></button>
+                </div>
+            </div>
+        </section>
+        <!-- Banner section end -->
     </header>
     <main>
 
